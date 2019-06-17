@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+html, body {
+  position: fixed;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  vertical-align: bottom;
+}

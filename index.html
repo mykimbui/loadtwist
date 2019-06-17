@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>wave</title>
+  <meta name="description" content="wave">
+  <meta name="author" content="my kim bui">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section>
+  </section>
+
+  <script src="three.min.js"></script>
+  <script src="shader-factory.js"></script>
+  <script src="objloader.js"></script>
+  <script src="mtlloader.js"></script>
+  <script src="index.js"></script>
+<!--
+  <script type="x-shader/x-vertex" id="vertexshader">
+    uniform float time;
+    uniform float height;
+    uniform float angleDegMax;
+    vec4 twist( vec4 pos, float t )
+    {
+      float st = sin(t);
+      float ct = cos(t);
+      vec4 new_pos;
+      new_pos.x = pos.x*ct - pos.z*st;
+      new_pos.z = pos.x*st + pos.z*ct;
+      new_pos.y = pos.y;
+      new_pos.w = pos.w;
+      return( new_pos );
+    }
+    void main() {
+    float angleDeg = angleDegMax * sin(time);
+    float angleRad = angleDeg * 3.14159 / 180.0;
+    float angle = (height * 0.5 + position.y) / height * angleRad;
+    vec4 twistedPosition = twist(vec4(position, 1.0), angle);
+    gl_Position = projectionMatrix * modelViewMatrix * twistedPosition;
+  }
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+  void main() {
+  gl_FragColor = vec4(1.0,  // R
+  0.0,  // G
+  1.0,  // B
+  1.0); // A
+}
+</script> -->
+</body>
+</html>
+
+
