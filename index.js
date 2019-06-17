@@ -54,23 +54,6 @@ const uniforms = {
   solidColor: { value: new THREE.Color(0xffffff) }
 }
 
-// function loadNextFile() {
-
-//   if (index > files.length - 1) return
-
-//   objLoader.load(files[index], function(object) {
-
-//     scene.add(object)
-
-//     index++
-//     loadNextFile()
-
-//   })
-
-// }
-
-loadNextFile()
-
 loadFiles("wave.mtl", "wave.obj").then(function (obj) {
   // obj.rotateX(Math.PI / 2)
   // obj.rotateY(Math.PI)
