@@ -14,7 +14,7 @@ const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 10000)
 
 const controls = new THREE.OrbitControls( camera, renderer.domElement )
-camera.position.z = -900
+camera.position.z = -1500
 controls.update()
 
 const ambientLight = new THREE.AmbientLight(0xffffff)
@@ -114,7 +114,7 @@ loadAll([
           child.castShadow = true
         }
       });
-      currentClone.position.set(0,-100 * i, 0)
+      currentClone.position.set(0,-50 * i, 0)
       let delay = 1000 * i
       delayItems.push({
         delay,
